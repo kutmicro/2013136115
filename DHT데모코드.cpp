@@ -99,12 +99,6 @@ void loop() {
 
 
 
-  // Compute heat index in Celsius (isFahreheit = false)
-
-  float hic = dht.computeHeatIndex(t, h, false);
-
-
-
   Serial.print("Temperature: ");
 
   Serial.print(t);
