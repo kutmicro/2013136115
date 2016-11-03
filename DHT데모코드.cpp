@@ -98,9 +98,6 @@ void loop() {
 
 
 
-  // Compute heat index in Fahrenheit (the default)
-
-  float hif = dht.computeHeatIndex(f, h);
 
   // Compute heat index in Celsius (isFahreheit = false)
 
@@ -114,9 +111,5 @@ void loop() {
 
   Serial.print(" *C ");
 
-  Serial.print(f);
-
-  Serial.print(" *F\t");
-
-
+ 
 }
