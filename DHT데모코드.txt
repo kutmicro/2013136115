@@ -108,12 +108,6 @@ void loop() {
 
 
 
-  Serial.print("Humidity: ");
-
-  Serial.print(h);
-
-  Serial.print(" %\t");
-
   Serial.print("Temperature: ");
 
   Serial.print(t);
@@ -124,14 +118,5 @@ void loop() {
 
   Serial.print(" *F\t");
 
-  Serial.print("Heat index: ");
-
-  Serial.print(hic);
-
-  Serial.print(" *C ");
-
-  Serial.print(hif);
-
-  Serial.println(" *F");
 
 }
