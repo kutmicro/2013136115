@@ -2,15 +2,9 @@
 
 // Written by ladyada, public domain
 
-
-
 #include "DHT.h"
 
-
-
 #define DHTPIN 2     // what digital pin we're connected to
-
-
 
 // Uncomment whatever type you're using!
 
@@ -74,8 +68,6 @@ void loop() {
 
   // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
 
-  float h = dht.readHumidity();
-
   // Read temperature as Celsius (the default)
 
   float t = dht.readTemperature();
@@ -88,7 +80,7 @@ void loop() {
 
   // Check if any reads failed and exit early (to try again).
 
-  if (isnan(h) || isnan(t) || isnan(f)) {
+  if (isnan(t) || isnan(f)) {
 
     Serial.println("Failed to read from DHT sensor!");
 
