@@ -27,7 +27,7 @@ void setup() {
    RTC.set(DS1307_MTH,1);
    RTC.set(DS1307_YR,10);
    RTC.start();
-  
+   
  } 
 
 void loop() { 
@@ -53,5 +53,10 @@ void loop() {
   delay(500);
   digitalWrite(ledPin, LOW);
   delay(500);
+ 
+ // playing
+ for(int i=0; i<7; i++){    
+  Serial.print(rtc[i]);    
+  Serial.print(" ");  }
  } 
 
