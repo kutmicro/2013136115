@@ -31,6 +31,7 @@ void setup() {
  } 
 
 void loop() { 
+ // 대기상
    delay(2000); 
    float t = dht.readTemperature(); 
    float f = dht.readTemperature(true); 
